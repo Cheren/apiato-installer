@@ -1,0 +1,20 @@
+{
+    "name": "cheren/apiato-installer",
+    "description": "A Composer plugin for installing Apiato Containers and Section Containers.",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Apiato\\Installer\\": "src/"
+        }
+    },
+    "extra": {
+        "class": "Apiato\\Installer\\SectionInstaller"
+    },
+    "require": {
+        "composer-plugin-api": "^2.0"
+    },
+    "require-dev": {
+        "composer/composer": "^2.0"
+    }
+}
