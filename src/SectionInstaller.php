@@ -18,7 +18,7 @@ class SectionInstaller extends LibraryInstaller
             $sectionName = $extras->apiato->section->name;
         }
 
-        return 'app/Containers/' . $sectionName;
+        return "app/Containers/{$sectionName}";
     }
 
     public function supports($packageType): bool
