@@ -15,14 +15,14 @@ class SectionContainerInstaller extends LibraryInstaller
     {
         $extras = json_decode(json_encode($package->getExtra()));
 
-        $sectionName = self::DEFAULT_SECTION;
+        $containerName = self::DEFAULT_SECTION;
         if (isset($extras->apiato->container->name)) {
-            $sectionName = $extras->apiato->container->name;
+            $containerName = $extras->apiato->container->name;
         }
 
-        $containerName = $package->getPrettyName();
+        $sectionName = $package->getPrettyName();
         if (isset($extras->apiato->section->name)) {
-            $containerName = $extras->apiato->section->name;
+            $sectionName = $extras->apiato->section->name;
         }
 
         return "app/Containers/{$sectionName}/{$containerName}";
