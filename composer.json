@@ -9,7 +9,7 @@
         }
     },
     "extra": {
-        "class": "Apiato\\Installer\\SectionInstaller"
+        "class": "Apiato\\Installer\\SectionInstallerPlugin"
     },
     "require": {
         "composer-plugin-api": "^2.0"
